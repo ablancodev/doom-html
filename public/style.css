@@ -195,3 +195,9 @@ footer {
   font-size: 12px;
   padding: 20px 16px 28px;
 }
+
+footer .credits {
+  font-size: 14px;
+  margin: 0 0 8px;
+  color: var(--text);
+}

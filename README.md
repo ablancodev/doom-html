@@ -7,7 +7,11 @@ Este repo mete **el DOOM original de 1993** en una pestaña del navegador. No es
 Abres la página, haces clic y estás en E1M1 con la pistola en la mano y el MIDI de *At Doom's Gate* sonando como en una Sound Blaster de los 90.
 
 <p align="center">
-  <img src="media/gameplay.gif" alt="DOOM ejecutándose en el navegador: tiroteo con escopeta en E1M5" width="640">
+  <a href="https://ablancodev.github.io/doom-html/"><img src="https://img.shields.io/badge/%E2%96%B6%20JUGAR%20AHORA-en%20tu%20navegador-c8321e?style=for-the-badge" alt="Jugar ahora" height="40"></a>
+</p>
+
+<p align="center">
+  <a href="https://ablancodev.github.io/doom-html/"><img src="media/gameplay.gif" alt="DOOM ejecutándose en el navegador: tiroteo con escopeta en E1M5" width="640"></a>
 </p>
 
 <p align="center"><i>Esto no es un vídeo de YouTube: es la DEMO1 original de 1994, reproducida por el motor de id dentro de Chrome.<br>
