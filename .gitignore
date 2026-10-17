@@ -1,0 +1,5 @@
+/build/
+/doom-src/
+/wad/
+node_modules/
+.DS_Store

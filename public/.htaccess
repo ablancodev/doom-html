@@ -1,0 +1,9 @@
+# WebAssembly needs its MIME type for streaming compilation.
+AddType application/wasm .wasm
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE application/wasm application/javascript text/css text/html application/octet-stream
+</IfModule>
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType application/octet-stream "access plus 30 days"
+</IfModule>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DOOM (1993) en el navegador</title>
+<meta name="description" content="El código fuente original de DOOM de id Software, compilado a WebAssembly. Juega en el navegador.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>DOOM <span>1993</span></h1>
+  <p class="tagline">El código fuente original de id Software, compilado a WebAssembly. Sin reescrituras.</p>
+</header>
+
+<main>
+  <div id="screen">
+    <canvas id="canvas" width="1600" height="1200" tabindex="0" aria-label="Pantalla de DOOM"></canvas>
+
+    <button id="start" class="overlay">
+      <span class="big">Haz clic para jugar</span>
+      <span class="small" id="start-info">Cargando…</span>
+    </button>
+
+    <div id="endoom" class="overlay hidden">
+      <canvas id="endoom-canvas" width="640" height="400"></canvas>
+      <button id="restart">Volver a jugar</button>
+    </div>
+
+    <div id="error" class="overlay hidden">
+      <p class="big">El juego se ha detenido</p>
+      <pre id="error-text"></pre>
+      <button onclick="location.reload()">Reiniciar</button>
+    </div>
+  </div>
+
+  <nav class="toolbar">
+    <button id="btn-fullscreen">Pantalla completa</button>
+    <label class="check"><input type="checkbox" id="opt-novert" checked> Ratón vertical desactivado</label>
+    <label class="button" for="wad-file">Cargar tu WAD…</label>
+    <input type="file" id="wad-file" accept=".wad,.WAD" hidden>
+    <button id="btn-shareware" class="hidden">Volver al shareware</button>
+  </nav>
+
+  <p id="wad-info" class="wad-info"></p>
+
+  <section class="help">
+    <h2>Controles originales</h2>
+    <dl>
+      <dt>Flechas</dt><dd>Moverse y girar</dd>
+      <dt>Ctrl / clic izquierdo</dt><dd>Disparar</dd>
+      <dt>Espacio</dt><dd>Abrir puertas, pulsar interruptores</dd>
+      <dt>Shift</dt><dd>Correr</dd>
+      <dt>Alt / clic derecho + mover</dt><dd>Desplazamiento lateral</dd>
+      <dt>, y .</dt><dd>Desplazamiento lateral</dd>
+      <dt>1 a 7</dt><dd>Cambiar arma</dd>
+      <dt>Tab</dt><dd>Mapa</dd>
+      <dt>Esc</dt><dd>Menú</dd>
+      <dt>F2 / F3</dt><dd>Guardar / cargar partida</dd>
+      <dt>F11</dt><dd>Gamma</dd>
+    </dl>
+    <p class="note">
+      Las partidas guardadas y la configuración se quedan en este navegador.
+      Incluye el episodio shareware 1 (<i>Knee-Deep in the Dead</i>), de distribución libre.
+      Si tienes el juego completo, carga tu <code>DOOM.WAD</code> o <code>DOOM2.WAD</code>: no sale de tu ordenador.
+    </p>
+  </section>
+</main>
+
+<footer>
+  Motor: <a href="https://github.com/id-Software/DOOM">linuxdoom-1.10</a> de id Software (GPL v2),
+  música OPL con <a href="https://github.com/nukeykt/Nuked-OPL3">Nuked-OPL3</a>.
+  DOOM es una marca registrada de id Software.
+</footer>
+
+<script src="app.js"></script>
+<script src="doom.js"></script>
+</body>
+</html>
