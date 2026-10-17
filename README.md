@@ -94,7 +94,7 @@ Cómo se mete un `while(1)` de 1993 en un navegador que no te deja bloquearlo, p
 
 ## ¿Quién ha hecho esto?
 
-Yo, [Antonio Blanco](https://ablancodev.com). Mi lema es *del problema a la solución*, y esta vez el problema era grave: DOOM no funcionaba en mi navegador. 🔫
+Yo, [Antonio Blanco](https://ablancodev.com), builder buscando soluciones a problemas. Esta vez el problema era grave: DOOM no funcionaba en mi navegador. 🔫
 
 Si te gustan estos experimentos, en **[ablancodev.com](https://ablancodev.com)** cuento lo que construyo cada semana: lo que funciona, lo que no y cuánto ha costado.
 
